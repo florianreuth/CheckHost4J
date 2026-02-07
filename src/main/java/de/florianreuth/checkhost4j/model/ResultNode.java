@@ -1,6 +1,6 @@
 /*
- * This file is part of CheckHost4J - https://github.com/FlorianMichael/CheckHost4J
- * Copyright (C) 2023-2026 FlorianMichael/EnZaXD <git@florianmichael.de> and contributors
+ * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package de.florianmichael.checkhost4j.model;
+package de.florianreuth.checkhost4j.model;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import de.florianmichael.checkhost4j.request.IRequester;
-import de.florianmichael.checkhost4j.util.CHRequests;
+import de.florianreuth.checkhost4j.request.IRequester;
+import de.florianreuth.checkhost4j.util.CHRequests;
 
 import java.util.HashMap;
 import java.util.List;

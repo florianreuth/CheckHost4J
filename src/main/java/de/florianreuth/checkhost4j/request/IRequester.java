@@ -1,6 +1,6 @@
 /*
- * This file is part of CheckHost4J - https://github.com/FlorianMichael/CheckHost4J
- * Copyright (C) 2023-2026 FlorianMichael/EnZaXD <git@florianmichael.de> and contributors
+ * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -15,10 +15,22 @@
  * limitations under the License.
  */
 
-package de.florianmichael.checkhost4j.util;
+package de.florianreuth.checkhost4j.request;
 
-public interface TFunction<K, V> {
+import java.net.URI;
 
-    V apply(K k) throws Exception;
+/**
+ * Interface for a requester
+ */
+public interface IRequester {
+
+    /**
+     * Get the content of the given URI
+     *
+     * @param target URI to get
+     * @return Content of the URI
+     * @throws Exception If an error occurs
+     */
+    String get(final URI target) throws Exception;
 
 }

@@ -2,23 +2,23 @@
 Java implementation of the check-host.net API
 
 ## Contact
-If you encounter any issues, please report them on the [issue tracker](https://github.com/FlorianMichael/CheckHost4J/issues).  
-If you just want to talk or need help with CheckHost4J feel free to join my [Discord](https://florianmichael.de/discord).
+If you encounter any issues, please report them on the [issue tracker](https://github.com/florianreuth/CheckHost4J/issues).  
+If you just want to talk or need help with CheckHost4J feel free to join my [Discord](https://florianreuth.de/discord).
 
 ## How to add this to your project
 
 ### Gradle/Maven
 
 To use CheckHost4J with Gradle/Maven you can
-use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianmichael/CheckHost4J)
-or [my own repository](https://maven.florianmichael.de/#/releases/de/florianmichael/CheckHost4J).  
+use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianreuth/checkhost4j)
+or [my own repository](https://maven.florianreuth.de/#/releases/de/florianreuth/checkhost4j).  
 You can also find instructions how to implement it into your build script there.
 
 ### Jar File
 
 If you just want the latest jar file you can download it
-from [my build server](https://build.florianmichael.de/job/CheckHost4J), [GitHub Actions](https://github.com/FlorianMichael/CheckHost4J/actions)
-or use the [releases tab](https://github.com/FlorianMichael/CheckHost4J/releases).
+from [my build server](https://build.florianreuth.de/job/CheckHost4J), [GitHub Actions](https://github.com/florianreuth/CheckHost4J/actions)
+or use the [releases tab](https://github.com/florianreuth/CheckHost4J/releases).
 
 This library requires you to have [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1) in your
 class path
@@ -78,7 +78,7 @@ You can also get all the server nodes which are being checked by using the `getN
 final List<ServerNode> nodes = pingResult.getNodes();
 ```
 
-The `de.florianmichael.checkhost4j.model.result` package contains all the result classes, which are used
+The `de.florianreuth.checkhost4j.model.result` package contains all the result classes, which are used
 to store the result of the requests.
 
 To get a list of all Request types you can use the `ResultType` enum.

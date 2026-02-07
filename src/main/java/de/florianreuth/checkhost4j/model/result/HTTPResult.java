@@ -1,6 +1,6 @@
 /*
- * This file is part of CheckHost4J - https://github.com/FlorianMichael/CheckHost4J
- * Copyright (C) 2023-2026 FlorianMichael/EnZaXD <git@florianmichael.de> and contributors
+ * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package de.florianmichael.checkhost4j.model.result;
+package de.florianreuth.checkhost4j.model.result;
 
 import com.google.gson.JsonArray;
-import de.florianmichael.checkhost4j.model.Result;
+import de.florianreuth.checkhost4j.model.Result;
 
-import static de.florianmichael.checkhost4j.util.JsonParser.*;
+import static de.florianreuth.checkhost4j.util.JsonParser.*;
 
 /**
  * Wrapper class file for DNS results, see <a href="https://check-host.net/about/api">CheckHost API specification</a> for more information

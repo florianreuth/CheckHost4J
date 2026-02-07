@@ -1,6 +1,6 @@
 /*
- * This file is part of CheckHost4J - https://github.com/FlorianMichael/CheckHost4J
- * Copyright (C) 2023-2026 FlorianMichael/EnZaXD <git@florianmichael.de> and contributors
+ * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -15,19 +15,20 @@
  * limitations under the License.
  */
 
-package de.florianmichael.checkhost4j.util;
+package de.florianreuth.checkhost4j.util;
 
 import com.google.gson.JsonObject;
-import de.florianmichael.checkhost4j.request.IRequester;
+import de.florianreuth.checkhost4j.CheckHost4J;
+import de.florianreuth.checkhost4j.request.IRequester;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URLEncoder;
 
-import static de.florianmichael.checkhost4j.util.JsonParser.GSON;
+import static de.florianreuth.checkhost4j.util.JsonParser.GSON;
 
 /**
- * Wrapper class file for API requests, methods here will return raw JSON data. Do not use, see {@link de.florianmichael.checkhost4j.CheckHost4J} for convenience methods.
+ * Wrapper class file for API requests, methods here will return raw JSON data. Do not use, see {@link CheckHost4J} for convenience methods.
  */
 public class CHRequests {
 

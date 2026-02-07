@@ -1,6 +1,6 @@
 /*
- * This file is part of CheckHost4J - https://github.com/FlorianMichael/CheckHost4J
- * Copyright (C) 2023-2026 FlorianMichael/EnZaXD <git@florianmichael.de> and contributors
+ * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -15,24 +15,10 @@
  * limitations under the License.
  */
 
-package de.florianmichael.checkhost4j.util;
+package de.florianreuth.checkhost4j.util;
 
-public class Pair<K, V> {
+public interface TFunction<K, V> {
 
-    private final K key;
-    private final V value;
-
-    public Pair(K key, V value) {
-        this.key = key;
-        this.value = value;
-    }
-
-    public K getKey() {
-        return key;
-    }
-
-    public V getValue() {
-        return value;
-    }
+    V apply(K k) throws Exception;
 
 }

@@ -1,6 +1,6 @@
 /*
- * This file is part of CheckHost4J - https://github.com/FlorianMichael/CheckHost4J
- * Copyright (C) 2023-2026 FlorianMichael/EnZaXD <git@florianmichael.de> and contributors
+ * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -15,25 +15,28 @@
  * limitations under the License.
  */
 
-package de.florianmichael.checkhost4j;
+package de.florianreuth.checkhost4j;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import de.florianmichael.checkhost4j.model.ResultNode;
-import de.florianmichael.checkhost4j.model.ServerNode;
-import de.florianmichael.checkhost4j.model.ResultType;
-import de.florianmichael.checkhost4j.model.result.*;
-import de.florianmichael.checkhost4j.request.IRequester;
-import de.florianmichael.checkhost4j.request.JavaRequester;
-import de.florianmichael.checkhost4j.util.CHRequests;
-import de.florianmichael.checkhost4j.util.Pair;
-
+import de.florianreuth.checkhost4j.model.ResultNode;
+import de.florianreuth.checkhost4j.model.ResultType;
+import de.florianreuth.checkhost4j.model.ServerNode;
+import de.florianreuth.checkhost4j.model.result.DNSResult;
+import de.florianreuth.checkhost4j.model.result.HTTPResult;
+import de.florianreuth.checkhost4j.model.result.PingResult;
+import de.florianreuth.checkhost4j.model.result.TCPResult;
+import de.florianreuth.checkhost4j.model.result.UDPResult;
+import de.florianreuth.checkhost4j.request.IRequester;
+import de.florianreuth.checkhost4j.request.JavaRequester;
+import de.florianreuth.checkhost4j.util.CHRequests;
+import de.florianreuth.checkhost4j.util.Pair;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static de.florianmichael.checkhost4j.util.JsonParser.*;
+import static de.florianreuth.checkhost4j.util.JsonParser.getObject;
 
 /**
  * The main class to interact with the CheckHost4J API. You can either use {@link #getServers(ResultType, String, int)} to get a list of servers
