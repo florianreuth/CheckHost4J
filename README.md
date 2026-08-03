@@ -1,44 +1,42 @@
 # CheckHost4J
+
 Java implementation of the check-host.net API
 
-## Contact
-If you encounter any issues, please report them on the [issue tracker](https://github.com/florianreuth/CheckHost4J/issues).  
-If you just want to talk or need help with CheckHost4J feel free to join my [Discord](https://florianreuth.de/discord).
+## Use in Gradle
 
-## How to add this to your project
+If you want to depend on CheckHost4J in your own project, use the Maven repository here:
 
-### Gradle/Maven
+https://mvnrepository.com/artifact/de.florianreuth/checkhost4j
 
-To use CheckHost4J with Gradle/Maven you can
-use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianreuth/checkhost4j)
-or [my own repository](https://maven.florianreuth.de/#/releases/de/florianreuth/checkhost4j).  
-You can also find instructions how to implement it into your build script there.
+or
 
-### Jar File
+https://maven.florianreuth.de/#/snapshots/de/florianreuth/checkhost4j (for snapshots)
 
-If you just want the latest jar file you can download it
-from [my build server](https://build.florianreuth.de/job/CheckHost4J), [GitHub Actions](https://github.com/florianreuth/CheckHost4J/actions)
-or use the [releases tab](https://github.com/florianreuth/CheckHost4J/releases).
+The repository page includes the latest coordinates and setup instructions.
 
-This library requires you to have [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1) in your
-class path
+Jar builds can be downloaded from my build server: https://build.florianreuth.de/job/CheckHost4J/
+
+## Requirements
+
+- [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1)
 
 ## API Terminology
+
 The API main class is `CheckHost4J`, it contains all the methods to interact with the API.
 
 ```java
 final CheckHost4J checkHost = CheckHost4J.INSTANCE;
 ```
 
-You can either use the `CheckHost4J.INSTANCE` or create a new instance of `CheckHost4J` yourself, by creating
-an own instance you can define the `IRequester` yourself, which is used to send the requests to the API.
+You can either use the `CheckHost4J.INSTANCE` or create a new instance of `CheckHost4J` yourself, by creating an own
+instance you can define the `IRequester` yourself, which is used to send the requests to the API.
 
 ```java
 final CheckHost4J checkHost = new CheckHost4J(...);
 ```
 
-The default `IRequester` is `JavaRequester`, which can be accessed via `JavaRequester.INSTANCE`, you can also
-create a new instance using `new JavaRequester("<user-agent>")`.
+The default `IRequester` is `JavaRequester`, which can be accessed via `JavaRequester.INSTANCE`, you can also create a
+new instance using `new JavaRequester("<user-agent>")`.
 
 ```java
 final CheckHost4J checkHost = new CheckHost4J(new JavaRequester("MyUserAgent"));
@@ -78,7 +76,12 @@ You can also get all the server nodes which are being checked by using the `getN
 final List<ServerNode> nodes = pingResult.getNodes();
 ```
 
-The `de.florianreuth.checkhost4j.model.result` package contains all the result classes, which are used
-to store the result of the requests.
+The `de.florianreuth.checkhost4j.model.result` package contains all the result classes, which are used to store the
+result of the requests.
 
 To get a list of all Request types you can use the `ResultType` enum.
+
+## Contact
+
+- Issues: https://github.com/florianreuth/CheckHost4J/issues
+- Discord: https://florianreuth.de/discord
