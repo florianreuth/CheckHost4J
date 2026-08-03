@@ -1,6 +1,6 @@
 /*
  * This file is part of CheckHost4J - https://github.com/florianreuth/CheckHost4J
- * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de> and contributors
+ * Copyright (C) 2023-2026 Florian Reuth <git@florianreuth.de>
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
