@@ -1,14 +1,11 @@
-import de.florianreuth.baseproject.setupProject
-import de.florianreuth.baseproject.setupPublishing
-
 plugins {
     `java-library`
-    id("de.florianreuth.baseproject")
+    id("base.java")
+    id("base.maven_publish")
+    id("publishing.reposilite")
+    id("publishing.maven_central")
 }
 
-setupProject()
-setupPublishing()
-
 dependencies {
-    compileOnly("com.google.code.gson:gson:2.14.0")
+    compileOnly(libs.gson)
 }
